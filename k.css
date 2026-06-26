@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh; /* Full viewport height */
+    padding: 2rem;
+}
+
+.intro-section, .feature-section, .about-section {
+    background-color: #f4f4f4;
+}
+
+.intro-section .intro-text, .feature-section, .about-section .text-content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.intro-section .intro-image, .about-section .image-content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.intro-image img, .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

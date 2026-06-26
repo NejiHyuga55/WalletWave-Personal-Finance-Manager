@@ -1,0 +1,223 @@
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .header i {
+            font-size: 40px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .categories, .expenses {
+            margin-bottom: 20px;
+        }
+        .categories h2, .expenses h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .categories .category-list, .expenses .expense-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .category-item, .expense-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            width: calc(33.333% - 10px);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .category-item i, .expense-item i {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .category-item span, .expense-item span {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .category-item p, .expense-item p {
+            font-size: 14px;
+            margin: 0;
+        }
+        .expenses .expense-list {
+            flex-direction: column;
+        }
+        .expense-item {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .expense-item .details {
+            display: flex;
+            align-items: center;
+        }
+        .expense-item .details i {
+            margin-right: 10px;
+        }
+        .expense-item .details span {
+            font-size: 16px;
+        }
+        .expense-item .amount, .expense-item .date {
+            font-size: 14px;
+        }
+        .expense-item .amount {
+            margin-right: 20px;
+        }
+        .filters {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .filters button {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 5px 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .filters button.active {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-wallet"></i>
+            <h1>Expense Tracker</h1>
+        </div>
+        <div class="categories">
+            <h2>Categories</h2>
+            <div class="category-list">
+                <div class="category-item">
+                    <i class="fas fa-utensils"></i>
+                    <span>Food & Drinks</span>
+                    <p>$20.00</p>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Groceries</span>
+                    <p>$60.00</p>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>Shopping</span>
+                    <p>$0.00</p>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-bus"></i>
+                    <span>Transport</span>
+                    <p>$0.00</p>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-film"></i>
+                    <span>Entertainment</span>
+                    <p>$0.00</p>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-bolt"></i>
+                    <span>Utilities</span>
+                    <p>$120.00</p>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>Health & Fitness</span>
+                    <p>$0.00</p>
+                </div>
+                <div class="category-item">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                    <p>$100.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="expenses">
+            <h2>Expenses</h2>
+            <div class="filters">
+                <button class="active">Daily</button>
+                <button>Monthly</button>
+                <button>Calendar</button>
+                <button>History</button>
+            </div>
+            <div class="expense-list">
+                <div class="expense-item">
+                    <div class="details">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Oct 17, 2024</span>
+                    </div>
+                    <div class="amount">$120.00</div>
+                    <div class="date">October 17, 2024</div>
+                </div>
+                <div class="expense-item">
+                    <div class="details">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Electricity Bill</span>
+                    </div>
+                    <div class="amount">$120.00</div>
+                    <div class="date">October 17, 2024</div>
+                </div>
+                <div class="expense-item">
+                    <div class="details">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Rent Payment</span>
+                    </div>
+                    <div class="amount">$100.00</div>
+                    <div class="date">October 17, 2024</div>
+                </div>
+                <div class="expense-item">
+                    <div class="details">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Oct 18, 2024</span>
+                    </div>
+                    <div class="amount">$20.00</div>
+                    <div class="date">October 18, 2024</div>
+                </div>
+                <div class="expense-item">
+                    <div class="details">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Lunch Out with Friends</span>
+                    </div>
+                    <div class="amount">$20.00</div>
+                    <div class="date">October 18, 2024</div>
+                </div>
+                <div class="expense-item">
+                    <div class="details">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Weekly Grocery Shopping</span>
+                    </div>
+                    <div class="amount">$60.00</div>
+                    <div class="date">October 18, 2024</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

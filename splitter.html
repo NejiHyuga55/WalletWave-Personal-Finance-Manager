@@ -1,0 +1,138 @@
+<html>
+<head>
+    <title>Cost Split</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #ffffff, #f8e9e9);
+        }
+        .container {
+            width: 400px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            position: relative;
+            height: 200px;
+            background: url(towfiqu-barbhuiya-xkArbdUcUeE-unsplash.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        .header .title {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .content {
+            padding: 24px;
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 0 8px;
+        }
+        .content p {
+            font-size: 14px;
+            color: #666;
+            margin: 0 0 24px;
+        }
+        .content .input-group {
+            margin-bottom: 16px;
+            text-align: left;
+        }
+        .content .input-group label {
+            display: block;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 4px;
+        }
+        .content .input-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .content .input-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            font-size: 14px;
+            background: #f8e9e9;
+            color: #000;
+        }
+        .content .button {
+            width: 100%;
+            padding: 12px;
+            background: #9e7171;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .footer {
+            text-align: center;
+            padding: 16px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">Cost split</div>
+        </div>
+        <div class="content">
+            <h1>What's the event or activity?</h1>
+            <p>To help you identify the cost split</p>
+            <!-- <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+            </div> -->
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <button onclick="redirectToDisplay()">Submit</button>
+            </div>
+        
+            <script>
+                function redirectToDisplay() {
+                    // Get the value from the input field
+                    var nameInput = document.getElementById("name").value;
+                    // Redirect to the display page with the name as a URL parameter
+                    window.location.href = "display.html?name=" + encodeURIComponent(nameInput);
+                }
+            </script>
+            <div class="input-group">
+                <label for="currency">Base currency</label>
+                <select id="currency" name="currency">
+                    <option value="INR">INR</option>
+                </select>
+            </div>
+            <a href="splitter1.htmL"><button class="button">CONTINUE</button></a>
+           
+        </div>
+        <div class="footer">
+            WALLETWAVE
+        </div>
+    </div>
+</body>
+</html>

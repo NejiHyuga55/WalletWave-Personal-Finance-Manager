@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgb(250, 247, 242);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color:rgb(250, 247, 242);
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color:#333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.get-app-btn {
+    padding: 0.5rem 1rem;
+    border: 2px solid #070a0d;
+    color: #0070f3;
+    background-color:  rgb(235, 239, 249);
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.get-app-btn:hover {
+    background-color: #a5caf6;
+    color: #fff;
+}
+
+/* Content Section */
+.content {
+    padding: 2rem;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color:rgb(156, 191, 181);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    background-color: rgb(156, 191, 181);
+}
+
+.intro-text p {
+    font-size: 1rem;
+    color: #666;
+    background-color: rgb(156, 191, 181);
+}
+
+.intro-image img {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.feature-section {
+    text-align: left;
+}
+
+.feature-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.feature-section p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.feature-section a {
+    color: #0070f3;
+    text-decoration: none;
+}
+
+.feature-section a:hover {
+    text-decoration: underline;
+}
+
+.learn-more-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #0c0c0d;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #005bb5;
+}
+
+

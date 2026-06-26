@@ -1,0 +1,175 @@
+<html>
+ <head>
+  <title>
+   Group Expense
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #fff, #f8f8f8);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 400px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            position: relative;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+        }
+        .header .back-button, .header .share-button, .header .menu-button {
+            position: absolute;
+            top: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .header .back-button {
+            left: 10px;
+        }
+        .header .share-button {
+            right: 50px;
+        }
+        .header .menu-button {
+            right: 10px;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .content .who-in {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .content .who-in i {
+            margin-right: 10px;
+        }
+        .content .add-people-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        .content .add-people-button i {
+            margin-right: 10px;
+        }
+        .costs {
+            border-top: 1px solid #ddd;
+            padding: 20px;
+        }
+        .costs h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+        .costs p {
+            color: #888;
+            margin: 10px 0;
+        }
+        .costs .add-cost-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border: 2px dashed #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #ff5a5f;
+        }
+        .costs .add-cost-button i {
+            margin-right: 10px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <img alt="Receipt printer with a long receipt on an orange background" height="200" src="https://storage.googleapis.com/a1aa/image/gVYya82CIQpKIZAvMCBNzs37w4crrWawLk0Dnpoo2CTmh67E.jpg" width="400"/>
+    <div class="back-button">
+     <i class="fas fa-arrow-left">
+     </i>
+    </div>
+    <div class="share-button">
+     <i class="fas fa-share-alt">
+     </i>
+    </div>
+    <div class="menu-button">
+     <i class="fas fa-ellipsis-v">
+     </i>
+    </div>
+   </div>
+   <div class="content">
+    <!-- <h1>
+     group name
+    </h1> -->
+    <h2 id="display-heading"></h2>
+
+    <script>
+        // Function to get URL parameters
+        function getQueryParam(param) {
+            var urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Get the 'name' parameter from the URL
+        var name = getQueryParam("name");
+        // Display it in the heading
+        if (name) {
+            document.getElementById("display-heading").innerText = "Hello, " +  + "!";
+        } else {
+            document.getElementById("display-heading").innerText = "Hello!";
+        }
+    </script>
+    <div class="who-in">
+     <i class="fas fa-users">
+     </i>
+     <span>
+      Who's IN
+     </span>
+    </div>
+    <div class="add-people-button">
+     <i class="fas fa-user-plus">
+     </i>
+     <span>
+      Add people
+     </span>
+    </div>
+   </div>
+   <div class="costs">
+    <h2>
+     Costs
+    </h2>
+    <p>
+     Split the bill easily with the whole group by adding costs.
+    </p>
+    <div class="add-cost-button">
+     <i class="fas fa-plus">
+     </i>
+     <span>
+      Add cost
+     </span>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

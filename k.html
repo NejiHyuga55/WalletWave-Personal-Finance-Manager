@@ -1,0 +1,136 @@
+<html>
+<head>
+  <title>Bill Splitting</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(223, 243, 233);
+      display: flex;
+      justify-content: center;
+    }
+
+    .scroll-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      gap: 50px; /* Gap between boxes */
+      max-width: 1000px;
+      margin: 0 auto;
+      overflow-y: auto;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      background-color:rgb(250, 247, 242);
+      padding: 50px; /* Larger padding for a bigger box */
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      gap: 40px; /* Spacing between image and text */
+    }
+
+    /* Flip image and text alignment */
+    .card:nth-child(even) {
+      flex-direction: row-reverse; /* Flip for every even card */
+    }
+
+    .text-content {
+      max-width: 600px;
+    }
+
+    .text-content h1 {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 0 0 15px;
+    }
+
+    .text-content p {
+      font-size: 20px;
+      color: #6c757d;
+      margin: 0 0 25px;
+      line-height: 1.8;
+    }
+
+    .text-content button {
+      background-color: #343a40;
+      color: #ffffff;
+      border: none;
+      padding: 14px 28px;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .text-content button:hover {
+      background-color: #495057;
+    }
+
+    .image-content img {
+      border-radius: 15px;
+      width: 300px; /* Set image width */
+      height: 400px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="scroll-container">
+    <!-- Repeat this card structure for each section -->
+    <div class="card">
+      <div class="image-content">
+        <img src="DALL·E 2024-11-10 16.10.11 - A modern, user-friendly digital interface for a 'Bill Splitting' feature on a website. It shows fields to enter the total bill, the number of people, .webp" alt="Group of friends discussing and laughing">
+      </div>
+      <div class="text-content">
+        <h1>BILL SPLITTING</h1>
+        <p>Bill splitting divides shared costs fairly among a group, making it simple to track expenses and settle up with transparency. It keeps everyone accountable, reduces confusion, and strengthens group harmony by clarifying who owes what.</p>
+        <a href="splitter.html"><button>LET'S SPLIT</button></a>
+
+      </div>
+    </div>
+
+    <!-- Duplicate the above card structure to create more sections -->
+    <div class="card">
+      <div class="image-content">
+        <img src="DALL·E 2024-11-10 16.09.17 - A modern digital interface for a 'Currency Converter' feature on a website. It displays currency input fields, conversion rates, and selectable curren.webp" alt="Group of friends discussing and laughing">
+      </div>
+      <div class="text-content">
+        <h1>CURRENCY CONVERTER</h1>
+        <p>The currency converter in Wallet Wave provides real-time exchange rates, allowing users to convert amounts accurately between currencies.</p>
+        <a href="convert.html"><button>LET'S CONVERT</button></a>
+      </div>
+    </div>
+
+    <!-- Third card -->
+    <div class="card">
+      <div class="image-content">
+        <img src="DALL·E 2024-11-10 15.47.52 - A sleek, modern digital interface for an 'Expense Tracker' feature on a website. It shows a monthly spending overview with graphs, pie charts, and cat.webp" alt="Group of friends discussing and laughing">
+      </div>
+      <div class="text-content">
+        <h1>EXPENSE TRACKER</h1>
+        <p>The Expense Tracker feature on Wallet Wave provides a clear overview of your monthly spending, categorizing expenses to help you stay within budget.</p>
+        <!-- <button>LET'S CALCULATE</button> -->
+        <a href="expences.html"><button>LET'S CALCULATE</button></a>
+      </div>
+    </div>
+
+    <!-- Fourth card -->
+    <div class="card">
+      <div class="image-content">
+        <img src="DALL·E 2024-11-10 16.07.00 - A sleek, modern digital interface for a 'Goal-Based Savings Tracker' feature on a website. The design includes savings goals with progress bars, targe.webp" alt="Group of friends discussing and laughing">
+      </div>
+      <div class="text-content">
+        <h1>GOAL SAVER</h1>
+        <p> They can set a target amount and date, and the tracker provides insights on how much they need to save monthly to reach their goal.</p>
+        <button>LET'S SAVE</button>
+      </div>
+    </div>
+
+</body>
+</html>
+
+
+

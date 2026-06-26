@@ -1,0 +1,121 @@
+<html>
+<head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0a0a5b;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .container h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .container p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .converter-box {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #000;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+        .tab i {
+            margin-right: 10px;
+        }
+        .tab.active {
+            background-color: #3a3a3a;
+            color: #fff;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .form-group div {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .form-group div:first-child {
+            margin-left: 0;
+        }
+        .form-group div:last-child {
+            margin-right: 0;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .convert-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CURRENCY CONVERTER</h1>
+        <p>This feature can help your users better manage expenses, understand spending in their local currency, and enhance the overall usability of Wallet Wave</p>
+        <div class="converter-box">
+            <div class="tabs">
+                <div class="tab active">
+                    <i class="fas fa-exchange-alt"></i> Convert
+                </div>
+                <div class="tab">
+                    <i class="fas fa-chart-line"></i> Charts
+                </div>
+                <div class="tab">
+                    <i class="fas fa-bell"></i> Alerts
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <label for="amount">Amount</label>
+                    <input type="text" id="amount" value="$1.00">
+                </div>
+                <div>
+                    <label for="from-currency">From</label>
+                    <select id="from-currency">
+                        <option value="usd">USD - US Dollar</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="to-currency">To</label>
+                    <select id="to-currency">
+                        <option value="eur">EUR - Euro</option>
+                    </select>
+                </div>
+            </div>
+            <button class="convert-button">Convert</button>
+        </div>
+    </div>
+</body>
+</html>
